@@ -1,106 +1,56 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<style type="text/css">
-			*.header{
-				margin-bottom:0px;
-				padding-bottom:7px;
-				padding-top:7px;
-				padding-left:7px;
-				padding-right:5px;
-				background-color:rgb(50,50,50);
-				font-family:monospace;
-				font-weight:bold;
-				color:rgb(245,245,245);
-				
-				/*border:2px solid rgb(175,175,175);*/
-			}
-			div.main{
-				width:700px;
-				padding-top:3%;
-				padding-left:7%;
-				/*border:2px solid rgb(105,105,105);*/
-			}
-			div.items{
-				margin-top:0px;
-				padding-bottom:7px;
-				padding-top:7px;
-				padding-left:7px;
-				padding-right:5px;
-				
-				/*
-				background-color:rgb(50,50,55);
-				border:2px solid rgb(175,175,175);
-				*/
-				
-				/*
-				border-top:2px solid rgb(175,175,175);
-				border-left:2px solid rgb(175,175,175);
-				border-right:2px solid rgb(175,175,175);
-				border-bottom:2px solid rgb(175,175,175);
-				*/
-			}
-			*.item{
-				padding:3px;
-				margin:3px;
-				font-size:18px;
-				color:rgb(245,245,245);
-			}
-			*.small{
-				font-size:16px;
-			}
-			a:link {text-decoration:underline;color:rgb(155,155,155);} /* unvisited link */
-			a:visited {text-decoration:underline;color:rgb(155,155,175);} /* visited link */
-			a:hover {text-decoration:none;color:rgb(195,195,195);} /* mouse over link */
-			a:active {text-decoration:none;color:rgb(230,230,230);} /* selected link */
-			
-			body{
-				background-color:rgb(50,50,50);
-				background-repeat:no-repeat;
-				font-family:times;
-			}
-	
-			/*
-			font-family:monospace
-			font-family:times /*default*/
-			/*
-			font-family:courier
-			font-family:verdena
-			*/
-		</style>
-		<script type="text/javascript">
-			function draw() {  
-				var canvas = document.getElementById("canvas");  
-				if (canvas.getContext) {  
-					var ctx = canvas.getContext("2d");
-					var xPos=0;
-					var yPos=0;
-					var reps=30;
-					var alpha=1;
-					var a = alpha;
-					var z = 25; // size of squares
-					var s = 2; // separation between squares
-					for(var row=1; row<=reps; row++,yPos=yPos+z+s){
-						xPos=0;
-						a=alpha-(row/reps);
-						for(var col=1; col<=reps; col++,xPos=xPos+z+s,a=a-(1/reps)){
-							ctx.fillStyle = "rgba(" + 20 + ", " + 20 + "," + 20 + ", " + a + ")";
-							ctx.fillRect (xPos, yPos, z, z);
-						}
-					}  
-				}  
-			}
-		</script>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>rade.mobi</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
 	</head>
-	<body onload="draw();">
-		<canvas id="canvas" width="1000px" height="800px" style="z-index:-1;position:fixed;top:2px;left:2px;"></canvas>
-		<div class="main">
-			<h1 class="header">Who Are We?</h1>
-			<div class="items">
-				<p class="item">The Queen:&nbsp;<a href="https://plus.google.com/114832543998488590027">Lisa Rade</a></p>
-				<p class="item">Lord of the Manor:&nbsp;<a href="http://jeff.rade.mobi/index.html">Jeff Rade</a>
-				<p class="item">Footman:&nbsp;<a href="https://plus.google.com/116944028521419024965">Payton Rade</a></p>
-				<p class="item">Footman:&nbsp;<a href="https://plus.google.com/113619283219896544225">Tyler Rade</p>
-			</div>
-		</div>
+	<body>
+        <div class="container-full">
+            <a href="//github.com/jeffrade/rade.mobi"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+            <div class="row">
+                <div class="col-lg-12 text-center v-center">
+                    <h1><strong>The Rade Family</strong></h1>
+                </div>
+            </div><!-- end div.row -->
+            <div class="row">
+                <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
+                    <a href="//jeff.rade.mobi/index.html"><i class="icon-link"></i></a>&nbsp;
+                    <a href="//plus.google.com/+LisaRade"><i class="icon-google-plus-sign"></i></a>&nbsp;
+                    <a href="//plus.google.com/116944028521419024965"><i class="icon-google-plus-sign"></i></a>&nbsp;
+                    <a href="//plus.google.com/113619283219896544225"><i class="icon-google-plus-sign"></i></a>&nbsp;
+                </div>
+            </div><!-- end div.row -->
+            <div class="navbar-fixed-bottom">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <br/>
+                        <br/>
+                        <p class="pull-left">
+                            &nbsp;
+                            <a href="mailto:jeffrade@gmail.com">jeffrade@gmail.com</a>
+                            &nbsp;
+                            <a href="//jeffrade.tip.me">
+                                <img alt="Tip Me With ChangeTip" src="//cdn.changetip.com/img/logos/tipme_round.png?1"/>
+                            </a>
+                        </p>
+                        <br/>
+                        <br/>
+                    </div>
+                </div><!-- end div.row -->
+            </div><!-- end div.navbar-fixed-bottom -->
+        </div><!-- end div.container-full -->
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
 	</body>
 </html>
