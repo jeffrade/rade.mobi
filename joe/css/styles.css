@@ -1,0 +1,19 @@
+body {
+    background-image: url("../img/giger-baby-big.png");
+    background-repeat: no-repeat;
+    font-family: 'Bangers', cursive;
+    font-weight: 800%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+#time {
+    color: #003399;
+}
