@@ -22,12 +22,30 @@ h1 {
   overflow:hidden;
 }
 
+.container-full-jeff {
+  margin: 0 auto;
+  width: 100%;
+  min-height:100%;
+  background: url(../img/bg2.jpg) no-repeat top center; /* TODO Only diff is image */
+  color:#eee;
+  overflow:hidden;
+}
+
 .container-full a {
   color:#eee;
   text-decoration:none;
 }
 
+.container-full-jeff a {
+  color:#eee;
+  text-decoration:none;
+}
+
 .container-full a:hover {
+  color:#428bca;
+}
+
+.container-full-jeff a:hover {
   color:#428bca;
 }
 
@@ -46,4 +64,9 @@ h1 {
 
 .navbar-fixed-bottom a:hover {
   text-decoration:underline;
+}
+
+#arrow-to-info:hover {
+  color:#428bca;
+  cursor:pointer;
 }

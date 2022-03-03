@@ -17,3 +17,7 @@ $ sudo certbot certonly --manual
 # Update (or create) the A record in Route53 to point to new Cloudfront dist domain.
 # Visit your domain over https to verify.
 ```
+
+##### Compressing Images
+ - Use `crunch` to compress PNG files.
+ - Use `jpegoptim` to compress JPG files.
